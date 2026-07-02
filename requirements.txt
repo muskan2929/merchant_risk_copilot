@@ -1,0 +1,9 @@
+langchain
+langchain-groq
+langchain-community
+beautifulsoup4
+requests
+chromadb
+sentence-transformers
+streamlit
+python-whois
