@@ -48,7 +48,7 @@ def retrieve_underwriting_guidelines(query: str) -> str:
 TOOLS = [website_legitimacy_tool, domain_age_tool, category_risk_tool,
          content_red_flags_tool, retrieve_underwriting_guidelines]
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
 
 SYSTEM_PROMPT = """You are a senior merchant underwriting analyst at a payment processing company (like Razorpay/Stripe).
 Given a merchant's business name, website URL, and business description, you must:
